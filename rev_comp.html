@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+
+
+  <title>Reverse Complement</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+  <link rel="stylesheet" href="includes/stylesheet.css" type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="scripts/sms_common.js">
+</script>
+  <script type="text/javascript" src="scripts/rev_comp.js">
+</script>
+<style>
+ .square {
+      background-color:;
+      width: 200px;
+      height: 200px;
+    } 
+ </style>
+</head>
+
+
+<body class="main" onload="document.main_form.main_submit.focus()">
+  <!-- MAIN TABLE -->
+ 
+
+  <div class="site-content">
+    <header class="site-header" data-bg-image="">
+      <div class="container">
+        <div class="header-bar">
+          <a href="index.html" class="branding">
+            <img src="images/li.ico" alt="" class="logo">
+            <div class="logo-type">
+              <h1 class="site-title">Dr Li's Lab</h1>
+              <small class="site-description">Fruit Molecular Biology Lab</small>
+            </div>
+          </a>
+
+          <nav class="main-navigation">
+            <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+            <ul class="menu">
+              <li class="home menu-item"><a href="index.html"><img src="images/home-icon.png" alt="Home"></a></li>
+              <li class="menu-item"><a href="about.html">About</a></li>
+              <li class="menu-item"><a href="services.html">Research Overview</a></li>
+              <li class="menu-item"><a href="projects.html">Our projects</a></li>
+              <li class="menu-item current-menu-item"><a href="resources.html">Resources</a></li>
+              <li class="menu-item"><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="mobile-navigation"></div>
+        </div>
+      </div>
+    </header>
+
+    <br>
+    <div class="page-head" data-bg-color="#FED106">
+      <div class="container">
+      <h1>Reverse Complement</h1>
+        
+      </div>
+    </div>
+<center>
+ 
+  <table border="0" cellspacing="2" cellpadding="2" data-bg-color="##0033A0">
+    <tbody>
+      <tr>
+    
+
+        <td class="program">
+          <table border="0" cellspacing="0" cellpadding="2">
+            <center></center>
+            <tbody>
+        
+
+              <tr>
+                <td class="description">
+                <br />
+                  <br />
+
+                  <form action="" name="main_form" id="main_form">
+                    <span>Paste the raw sequence or one or more FASTA sequences into the text area below.<br /></span>
+                    <textarea rows="6" cols="61">
+&gt;Demo Sequence 1
+ATGCATGCATGCATTTTGGGAAACCC
+
+
+</textarea><br />
+
+
+                    <input type="button" value="Submit" name="main_submit" onclick="try{revComp(document)} catch(e) {alert('The following error was encountered: ' + e);}" /> <input type="button" value="Clear" onclick="document.forms[0].elements[0].value = ' '" /> <input type="reset" value="Reset" />
+                   
+                    <ul>
+
+                      <li><select>
+                        <br>
+                        <option value="reverse-complement" selected="selected">
+                          reverse-complement
+                        </option>
+
+                        <option value="reverse">
+                          reverse
+                        </option>
+
+                        <option value="complement">
+                          complement
+                        </option>
+                      </select></li>
+                    </ul>
+                  
+                  <br />
+
+                </center>
+                   
+                </td>
+              </tr>
+
+              <tr>
+                
+              </tr>
+            </tbody>
+          </table><!-- MAIN TABLE END -->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </center>
+</div>
+</body>
+</html>
